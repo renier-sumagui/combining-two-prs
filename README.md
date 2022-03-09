@@ -1,7 +1,15 @@
 # Pull Request 2
 Now that you learned how to perform git commands and pull-request, we will now do another practice.
 
-In this assignment, you will be required to have 2 GitHub user accounts. Each user will be in-charge in opening a pull-request with different feature simultaneously. And to do this, follow the instructions below:
+In this assignment, you will be required to have only 1 GitHub user account.
+
+Observe the differences of each branches, especially the feature branches. Your task is to make the 2 feature branches reflect to the develop branch using pull-request. Here are the guidelines you can follow:
+
+1. In GitHub, open a pull-request from feature/git_add_all to develop.
+1. Approve your own pull-request.
+1. Do the same above steps for feature/git_add_asterisk.
+
+All of these steps should be done only inside your created central repository. At the end of the day, make sure the codes are successfully combined to the central destination branch. 
 
 ## Pre-requisites:
 

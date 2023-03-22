@@ -10,6 +10,7 @@ class GitCommand {
     }
 
     //Command: git status
+    // Paste the codes you already did from the "Git Out Bug!" assignment
     // status(){}
 
     //Command: git add <filename/file directory/wildcard> 
@@ -21,7 +22,7 @@ class GitCommand {
             delete modified_files[path_file];
         }
         /*
-            Create logic here and run unit testing.
+            Create logic here then run unit testing. Make sure that they all pass before sending PR.
         */
         else{
             return `Failed to add ${path_file}! File is not modified or missing.`;

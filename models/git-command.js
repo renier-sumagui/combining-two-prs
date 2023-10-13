@@ -12,6 +12,21 @@ class GitCommand {
     //Command: git status
     // Paste the codes you already did from the "Git Out Bug!" assignment
     // status(){}
+    status(){        
+        const { new_changes }= this.working_directory;
+        const length = Object.entries(new_changes).length;
+        let messageString = '';
+
+        if (length > 0) {
+            messageString += `You have ${length} change/s.`
+            for (let property in new_changes) {
+                messageString += `\n${property}`;
+            }
+            return messageString;
+        } else {
+            return 'You have 0 change/s.\n';
+        }
+    }
 
     //Command: git add <filename/file directory/wildcard> 
     add(path_file){

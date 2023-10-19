@@ -31,7 +31,7 @@ class GitCommand {
     //Command: git add <filename/file directory/wildcard> 
     add(path_file){
         let modified_files = this.working_directory.new_changes;
-        
+
         if(modified_files[path_file]){
             this.staging.push(modified_files[path_file]);
             delete modified_files[path_file];
@@ -46,6 +46,12 @@ class GitCommand {
                     delete modified_files[property];
                 }
             }
+        else if (path_file === '.') {
+            for (let property in modified_files) {
+                this.staging.push(modified_files[property]);
+                delete modified_files[property];
+            }
+            return 'Successfully added as index file/s.';
         }
         else{
             return `Failed to add ${path_file}! File is not modified or missing.`;
